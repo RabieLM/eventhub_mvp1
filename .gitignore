@@ -1,0 +1,12 @@
+config/mailer.local.php
+.env
+*.log
+.git/
+.git_codex*/
+
+chrome_*_profile/
+tmp_*/
+{config,events,api,pdf,mail/
+
+.DS_Store
+Thumbs.db
