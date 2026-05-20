@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation inscription - EventHub Pro</title>
+  <style>
+    body { margin:0; padding:0; background:#f1f5f9; font-family:Arial,sans-serif; color:#1e293b; }
+    .wrapper { max-width:620px; margin:32px auto; background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; overflow:hidden; }
+    .header { background:#0f1f3d; color:#ffffff; padding:26px 34px; }
+    .header h1 { margin:0; font-size:22px; }
+    .header p { margin:6px 0 0; color:#cbd5e1; }
+    .body { padding:30px 34px; }
+    .box { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:16px; margin:18px 0; }
+    .btn { display:inline-block; background:#2563eb; color:#ffffff !important; text-decoration:none; padding:12px 18px; border-radius:8px; font-weight:bold; margin:6px 8px 6px 0; }
+    .btn.secondary { background:#64748b; }
+    .footer { background:#f8fafc; border-top:1px solid #e2e8f0; padding:18px 34px; text-align:center; color:#64748b; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Inscription confirmee</h1>
+      <p>EventHub Pro - ENSA Marrakech</p>
+    </div>
+    <div class="body">
+      <p>Bonjour <strong>{{PARTICIPANT_NAME}}</strong>,</p>
+      <p>Votre inscription a bien ete enregistree.</p>
+      <div class="box">
+        <p><strong>Evenement :</strong> {{EVENT_TITLE}}</p>
+        <p><strong>Date :</strong> {{EVENT_DATE}}</p>
+        <p><strong>Lieu :</strong> {{EVENT_LOCATION}}</p>
+      </div>
+      <p>
+        <a href="{{TICKET_LINK}}" class="btn">Telecharger mon ticket PDF</a>
+        <a href="{{UNSUBSCRIBE_LINK}}" class="btn secondary">Me desinscrire</a>
+      </p>
+      <p style="font-size:13px;color:#64748b">
+        Le lien de desinscription est unique et libere automatiquement une place.
+      </p>
+    </div>
+    <div class="footer">
+      EventHub Pro - {{YEAR}}
+    </div>
+  </div>
+</body>
+</html>
